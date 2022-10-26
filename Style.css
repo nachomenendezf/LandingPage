@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url('Lato-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato-Regular;
+}
+
+body {
+    display: inline;
+    color: #202529;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    width: 100%;
+    background-color: #202529;
+}
+
+#menu {
+    height: 60px;
+    width: 100%;
+}
+
+#logo {
+    height: 40px;
+    width: 40px;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #FFFFFF;
+}
+
+#menu ul li a:hover {
+    background-color: #6A757D;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 660px;
+    width: 100%;
+    background-image: url(./Assets/Background.png);
+    background-size: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+#aboutContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#aboutText {
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+button {
+    width: 174px;
+    height: 40px;
+    background-color: #202529;
+    color: #FFFFFF;
+    border-color: #202529;
+    border-radius: 10px;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+button:hover {
+    border-color: #202529;
+    background-color: #FFFFFF;
+    color: #202529;
+}
+
+.marked {
+    font-weight: bold;
+}
+
+#aboutPhoto {
+    height: 350px;
+    width: 555px;
+    background-color: #202529;
+}
