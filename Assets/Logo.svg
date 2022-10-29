@@ -1,1 +1,13 @@
-<svg id="Logo_1" data-name="Logo 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.24 510.24"><defs><style>.cls-1{fill:#090f22;}.cls-2{fill:none;stroke:#b68d40;stroke-miterlimit:10;stroke-width:5px;}.cls-3{fill:#b68d40;}.cls-4{fill:#fff;}</style></defs><title>Logo 1 2</title><circle class="cls-1" cx="255.12" cy="255.12" r="255.12"/><circle class="cls-2" cx="255.12" cy="255.12" r="226.77"/><polygon class="cls-3" points="228.93 324.57 106.05 324.57 106.05 174.69 228.93 324.57"/><polygon class="cls-4" points="413.49 324.57 228.93 324.57 228.93 174.69 321.21 285.69 413.49 174.69 413.49 324.57"/></svg>
+<svg width="650" height="650" viewBox="0 0 650 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_100_381)">
+<path d="M325 650C504.493 650 650 504.493 650 325C650 145.507 504.493 0 325 0C145.507 0 0 145.507 0 325C0 504.493 145.507 650 325 650Z" fill="white"/>
+<path d="M325 616.769C484.547 616.769 613.885 487.431 613.885 327.885C613.885 168.338 484.547 39 325 39C165.453 39 36.1154 168.338 36.1154 327.885C36.1154 487.431 165.453 616.769 325 616.769Z" fill="#202529" stroke="#202529" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M291.636 424.934H135.098V234L291.636 424.934Z" fill="#6A757D"/>
+<path d="M526.749 424.934H291.636V234L409.193 375.404L526.749 234V424.934Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_100_381">
+<rect width="650" height="650" fill="white"/>
+</clipPath>
+</defs>
+</svg>

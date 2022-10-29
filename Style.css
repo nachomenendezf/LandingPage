@@ -5,9 +5,16 @@
 
 html {
     scroll-behavior: smooth;
-    /*scrollbar-face-color: #202529;
-    scrollbar-base-color: #202529;*/
 }
+
+/*html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #202529;
+    border-radius: 0px 0px 10px 10px;
+}*/
 
 * {
     margin: 0;
@@ -32,6 +39,8 @@ header {
 
 #menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
     width: 100%;
 }
@@ -39,12 +48,13 @@ header {
 #logo {
     height: 40px;
     width: 40px;
+    margin-right: 665px;
 }
 
 .item {
     padding: 20px;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 12pt;
     color: #FFFFFF;
 }
@@ -95,13 +105,13 @@ h3 {
     font-size: 14pt;
 }
 
-#button {
+#buttonCV {
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
 
-button {
+#btnCV {
     width: 174px;
     height: 40px;
     background-color: #202529;
@@ -109,19 +119,15 @@ button {
     color: #FFFFFF;
     box-shadow: inset 0 0 0 0 #F2F1F0;
     transition: ease-out 1.0s;
-    /*border: none;*/
     border-radius: 10px;
     font-size: 16pt;
     font-weight: 400;
 }
 
-button:hover {
+#btnCV:hover {
     box-shadow: inset 300px 0 0 0 #F2F1F0;
     color: #202529;
     border-color: #202529;
-    /*border: none;
-    background-color: #FFFFFF;
-    color: #202529;*/
 }
 
 .marked {
@@ -152,6 +158,10 @@ button:hover {
     height: 50px;
 }
 
+.icon:hover {
+    transform: translateY(-5px);
+}
+
 #group1 {
     display: flex;
     justify-content: space-around;
@@ -173,7 +183,7 @@ button:hover {
     justify-content: space-between;
 }
 
-.project {
+.project {                                  /*Suavizar transition*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,14 +193,60 @@ button:hover {
     box-shadow: 0px 0px 10px 0px #000;
 }
 
-#guruyu:hover {
+.viewSite {
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    border-color: #FFFFFF;
     background-color: #202529;
-    transition: ease-out 200ms;
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top: 30px;
 }
 
-#darsenero:hover {
+.viewSite a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#card1 div:last-child {
+    display: none;
+}
+
+#card1:hover div:last-child {
+    display:block;
     background-color: #202529;
-    transition: ease-out 200ms;
+    transition: ease-out 500ms;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 22px;
+}
+
+#card1:hover div:first-child {
+    display: none;
+}
+
+#card2 div:last-child {
+    display: none;
+}
+
+#card2:hover div:last-child {
+    display:block;
+    background-color: #202529;
+    transition: ease-out 500ms;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 22px;
+}
+
+#card2:hover div:first-child {
+    display: none;
 }
 
 #empty:hover {
@@ -218,10 +274,305 @@ button:hover {
     margin: 0px 80px 0px 80px;
 }
 
+.aSocial img:last-child {
+    display: none;
+}
+
+.aSocial:hover img:last-child {
+    display:block;
+}
+
+.aSocial:hover img:first-child {
+    display: none;
+}
+
 #contactText {
     color: #6A757D;
     margin: 80px 0px 20px 0px;
     font-weight: 100;
     font-size: 10pt;
     text-align: center;
+}
+
+.transparent {
+    height: 120px;
+    width: 100%;
+}
+
+/*********************************************************************************************/
+
+@media screen and (max-width: 480px) {
+    body {
+    display: inline;
+    color: #202529;
+}
+    header {
+        display: none;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    #logo {
+        display: none;
+    }
+    /*                                  Burger menu
+    .item {
+        padding: 20px;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 12pt;
+        color: #FFFFFF;
+    }
+    
+    .item:hover {
+        background-color: #6A757D;
+    }*/
+    
+    #home {
+        display: flex;
+        flex-direction: column;
+        height: 602px;
+        width: 100%;
+        background-image: url(./Assets/Background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    #homeText {
+        margin-top: 0px;
+    }
+    
+    h1 {
+        font-size: 15pt;
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-size: 11pt;
+        font-weight: 500;
+    }
+    
+    #about {
+        display: flex;
+        flex-direction: column;
+        margin: 88px 16px 0px 16px;
+    }
+    
+    #aboutContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+/*
+    #aboutContainer:last-child {
+        order: 1;
+    }
+
+    #aboutContainer:first-child {
+        order: 2;
+    }
+*/    
+    #aboutDescription {
+        font-weight: 300;
+        font-size: 14pt;
+    }
+    
+    #buttonCV {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    
+    #btnCV {
+        width: 174px;
+        height: 40px;
+        background-color: #202529;
+        border-color: #202529;
+        color: #FFFFFF;
+        box-shadow: inset 0 0 0 0 #F2F1F0;
+        transition: ease-out 1.0s;
+        border-radius: 10px;
+        font-size: 16pt;
+        font-weight: 400;
+    }
+    
+    #btnCV:hover {
+        box-shadow: inset 300px 0 0 0 #F2F1F0;
+        color: #202529;
+        border-color: #202529;
+    }
+    
+    .marked {
+        font-weight: bold;
+    }
+    
+    #aboutPhoto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 295px;
+        width: 555px;
+        background-color: #202529;
+        color: #FFFFFF;
+        font-size: 20pt;
+        font-weight: 500;
+    }
+    
+    #skills {
+        margin: 200px 80px 0px 80px;
+    }
+    
+    #icons {
+        margin-top: 80px;
+    }
+    
+    .icon {
+        height: 50px;
+    }
+    
+    .icon:hover {
+        transform: translateY(-5px);
+    }
+    
+    #group1 {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #group2 {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #portfolio {
+        margin: 200px 80px 0px 80px;
+    }
+    
+    #projects {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .project {                                  /*Suavizar transition*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 321px;
+        width: 363px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px #000;
+    }
+    
+    .viewSite {
+        height: 40px;
+        width: 170px;
+        border-radius: 10px;
+        border-color: #FFFFFF;
+        background-color: #202529;
+        font-size: 16pt;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+    
+    .viewSite a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    #card1 div:last-child {
+        display: none;
+    }
+    
+    #card1:hover div:last-child {
+        display:block;
+        background-color: #202529;
+        transition: ease-out 500ms;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 22px;
+    }
+    
+    #card1:hover div:first-child {
+        display: none;
+    }
+    
+    #card2 div:last-child {
+        display: none;
+    }
+    
+    #card2:hover div:last-child {
+        display:block;
+        background-color: #202529;
+        transition: ease-out 500ms;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 22px;
+    }
+    
+    #card2:hover div:first-child {
+        display: none;
+    }
+    
+    #empty:hover {
+        background-color: #202529;
+        transition: ease-out 200ms;
+        color: #FFFFFF;
+    }
+    
+    .projectLogo {
+        height: 200px;
+    }
+    
+    #contact {
+        margin: 200px 80px 0px 80px;
+    }
+    
+    #social {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social {
+        height: 30px;
+        margin: 0px 80px 0px 80px;
+    }
+    
+    .aSocial img:last-child {
+        display: none;
+    }
+    
+    .aSocial:hover img:last-child {
+        display:block;
+    }
+    
+    .aSocial:hover img:first-child {
+        display: none;
+    }
+    
+    #contactText {
+        color: #6A757D;
+        margin: 80px 0px 20px 0px;
+        font-weight: 100;
+        font-size: 10pt;
+        text-align: center;
+    }
+    
+    .transparent {
+        height: 120px;
+        width: 100%;
+    }
+    
 }

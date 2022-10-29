@@ -11,7 +11,7 @@
         <header>
             <nav>
                 <div id="menu">
-                    <!---Logo-->
+                    <img src="./Assets/Logo.svg" id="logo">
                     <a href="#home" class="item">Inicio</a>
                     <a href="#about" class="item">Sobre mí</a>
                     <a href="#skills" class="item">Habilidades</a>
@@ -30,6 +30,7 @@
         </section>
         <section>
             <div id="about" class="section">
+                <div class="transparent"></div>
                 <h2>Sobre mí</h2>
                 <div id="aboutContainer">
                     <div id="aboutDescription">
@@ -43,8 +44,8 @@
                             ante situaciones cambiantes.<br>
                             Empleo metodologías <i class="marked">Pixel Perfect</i> y <i class="marked">Design Thinking</i>.<br>
                         </div>
-                        <div id="button">
-                            <a href="https://drive.google.com/file/d/1I9izBbZRBU_Up2w6FsQAds6ztQrKbXDl/view?usp=sharing" target="_blank"><button>Descargar CV</button></a>
+                        <div id="buttonCV">
+                            <a href="https://drive.google.com/file/d/1I9izBbZRBU_Up2w6FsQAds6ztQrKbXDl/view?usp=sharing" target="_blank"><button id="btnCV">Descargar CV</button></a>
                         </div>
                     </div>
                     <div id="aboutPhoto">
@@ -55,6 +56,7 @@
         </section>
         <section>
             <div id="skills" class="section">
+                <div class="transparent"></div>
                 <h2>Habilidades</h2>
                 <div id="icons">
                     <div id="group1">
@@ -76,13 +78,42 @@
         </section>
         <section>
             <div id="portfolio" class="section">
+                <div class="transparent"></div>
                 <h2>Portafolio</h2>
                    <div id="projects">
-                    <div id="guruyu" class="project">
-                        <img src="./Assets/Guruyu.svg" class="projectLogo">
+                    <div id="card1">
+                        <div id="guruyu" class="project">
+                            <img src="./Assets/Guruyu.svg" class="projectLogo">
+                        </div>
+                        <div id="guruyuText" class="project">
+                            Aplicación web para gestionar la Liga<br>
+                            Guruyú de fútbol amateur.<br>
+                            Permite ver datos y estadísticas de los<br>
+                            clubes que participan, así como también<br>
+                            de los jugadores (goles, asistencias,<br>
+                            tarjetas, etc.).
+                            <button class="viewSite">
+                                <a href="https://www.ligaguruyu.com/" target="_blank">Ver sitio ></a>
+                            </button>
+                        </div>
                     </div>
-                    <div id="darsenero" class="project">
-                        <img src="./Assets/Darsenero.svg" class="projectLogo">
+                    <div id="card2">
+                        <div id="darsenero" class="project">
+                            <img src="./Assets/Darsenero.svg" class="projectLogo">
+                        </div>
+                        <div id="darsenero" class="project">
+                            Aplicación web que contiene todos los<br>
+                            datos referidos al Club Atlético River<br>
+                            Plate de Montevideo, desde su fundación<br>
+                            hasta la actualidad. Tiene registrados<br>
+                            todos los partidos jugados, el historial<br>
+                            contra cada rival, así como los jugadores<br>
+                            y entrenadores que pasaron por la<br>
+                            institución.
+                            <button class="viewSite">
+                                <a href="https://www.darsenerodb.com/" target="_blank">Ver sitio ></a>
+                            </button>
+                        </div>
                     </div>
                     <div id="empty" class="project">
                         <div id="emptyLogo">
@@ -94,12 +125,25 @@
         </section>
         <footer>
             <div id="contact" class="section">
+                <div class="transparent"></div>
                 <h2>Contacto</h2>
                 <div id="social">
-                    <a href="https://www.linkedin.com/in/nachomenendezf/"><img src="./Assets/LinkedIn.svg" class="social" title="LinkedIn"></a>
-                    <a href="https://www.behance.net/nachomenendezf"><img src="./Assets/Behance.svg" class="social" title="Behance"></a>
-                    <a href="mailto:nachomenendezf@gmail.com"><img src="./Assets/Gmail.svg" class="social" title="Gmail"></a>
-                    <a href="https://wa.me/59891895795"><img src="./Assets/Whatsapp.svg" class="social" title="Whatsapp"></a>
+                    <a href="https://www.linkedin.com/in/nachomenendezf/" class="aSocial">
+                        <img src="./Assets/LinkedIn.svg" class="social" title="LinkedIn" id="linkedin">
+                        <img src="./Assets/LinkedInColor.svg" class="social" title="LinkedIn" id="linkedinColor">
+                    </a>
+                    <a href="https://www.behance.net/nachomenendezf" class="aSocial">
+                        <img src="./Assets/Behance.svg" class="social" title="Behance" id="behance">
+                        <img src="./Assets/BehanceColor.svg" class="social" title="Behance" id="behanceColor">
+                    </a>
+                    <a href="mailto:nachomenendezf@gmail.com" class="aSocial">
+                        <img src="./Assets/Gmail.svg" class="social" title="Gmail" id="gmail">
+                        <img src="./Assets/GmailColor.svg" class="social" title="Gmail" id="gmailColor">
+                    </a>
+                    <a href="https://wa.me/59891895795" class="aSocial">
+                        <img src="./Assets/Whatsapp.svg" class="social" title="Whatsapp" id="whatsapp">
+                        <img src="./Assets/WhatsappColor.svg" class="social" title="Whatsapp" id="WhatsappColor">
+                    </a>
                 </div>
                 <div id="contactText">
                     © 2022 - Ignacio Menéndez - Montevideo, Uruguay.<br>
