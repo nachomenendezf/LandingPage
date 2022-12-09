@@ -5,6 +5,7 @@ on:
     #paths-ignore:
     #  - '.github/**'
     branches: 
+      - "main"
       - "devops"
 
 env:
