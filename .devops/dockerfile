@@ -12,5 +12,5 @@ COPY Lato-Regular.ttf /usr/share/nginx/site/dist/front
 COPY .devops/conf/default.conf /etc/nginx/conf.d/default.conf
 COPY .devops/conf/nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 3001
+EXPOSE 8085
 CMD [ "nginx" , "-g" , "daemon off;"]
