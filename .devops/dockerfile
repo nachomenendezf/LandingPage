@@ -4,7 +4,7 @@ RUN apk add vim \
     && apk add curl \
     && apk add nano;
 
-COPY ./Assets /usr/share/nginx/site/dist/
+COPY Assets/ /usr/share/nginx/site/dist/
 COPY index.html /usr/share/nginx/site/dist/
 COPY Style.css /usr/share/nginx/site/dist/
 COPY Lato-Regular.ttf /usr/share/nginx/site/dist/
