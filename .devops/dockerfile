@@ -9,5 +9,5 @@ COPY ./ /usr/share/nginx/site/dist/
 COPY .devops/conf/default.conf /etc/nginx/conf.d/default.conf
 COPY .devops/conf/nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 8085
+EXPOSE 8083
 CMD [ "nginx" , "-g" , "daemon off;"]
